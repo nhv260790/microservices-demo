@@ -30,7 +30,7 @@
 		<spring-boot.version>2.7.5</spring-boot.version>
 		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
 		<twitter4j.version>4.0.7</twitter4j.version>
-		<lombok.version>1.18.22</lombok.version>
+		<lombok.version>1.18.16</lombok.version>
 		<httpclient.version>4.5.13</httpclient.version>
 		<avro.version>1.11.1</avro.version>
 		<spring-kafka.version>2.9.2</spring-kafka.version>
@@ -38,6 +38,7 @@
 		<kafka-avro-serializer.version>5.5.1</kafka-avro-serializer.version>
 		<spring-cloud.version>3.1.4</spring-cloud.version>
 		<spring-cloud-dependencies.version>2021.0.4</spring-cloud-dependencies.version>
+		<jasypt.version>3.0.5</jasypt.version>
 	</properties>
 
 	<repositories>
@@ -166,6 +167,13 @@
 				<artifactId>spring-boot-starter-security</artifactId>
 				<version>${spring-boot.version}</version>
 			</dependency>
+
+			<dependency>
+				<groupId>com.github.ulisesbocchio</groupId>
+				<artifactId>jasypt-spring-boot-starter</artifactId>
+				<version>${jasypt.version}</version>
+			</dependency>
+
 			<dependency>
 				<groupId>io.confluent</groupId>
 				<artifactId>kafka-avro-serializer</artifactId>

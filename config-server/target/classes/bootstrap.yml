@@ -10,8 +10,12 @@ spring:
           username: nhv260790
           password: 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
 #          uri: https://github.com/****/spring-cloud-config-server-repository
-#          default-label: main
+          default-label: main
 #          username: ****
 #          password: ****
           clone-on-start: true
     fail-fast: true
+  security:
+    user:
+      name: spring_cloud_user
+      password: ENC(Y/i1a9p4rsUpkYGIiOTIz0wMJdOz7EqWhxpNWNwiQxa1m8XQ3Edw4IxO1MU9Y+5teW6OhO11O0133ZYhFvj+ag==)
